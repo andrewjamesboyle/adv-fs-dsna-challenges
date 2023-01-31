@@ -28,6 +28,7 @@ const stack = new Stack();
 stack.push('fox');
 stack.push('goose');
 stack.push('lizard');
+console.log('stack', stack);
 console.log(stack.pop()); // 'lizard'
 console.log(stack.peek()); // 'goose'
 console.log(stack.pop()); // 'goose'
