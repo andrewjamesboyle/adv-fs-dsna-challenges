@@ -1,22 +1,22 @@
 class Stack {
-  #list = [];
+  list = [];
 
   constructor(initialList) {
-    if (initialList) this.#list = initialList;
+    if (initialList) this.list = initialList;
   }
 
   push(item) {
-    return this.#list.push(item);
+    return this.list.push(item);
   }
 
   pop() {
-    if (this.#list.length === 0) {
+    if (this.list.length === 0) {
       return null;
-    } else return this.#list.pop();
+    } else return this.list.pop();
   }
 
   peek() {
-    return this.#list[this.#list.length - 1];
+    return this.list[this.list.length - 1];
   }
 
 }
@@ -29,6 +29,7 @@ stack.push('fox');
 stack.push('goose');
 stack.push('lizard');
 console.log('stack', stack);
+console.log('stack.list', stack.list = []);
 console.log(stack.pop()); // 'lizard'
 console.log(stack.peek()); // 'goose'
 console.log(stack.pop()); // 'goose'
